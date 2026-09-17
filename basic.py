@@ -1,4 +1,4 @@
-#output function:the function is used to print the output on the screen
+#"output function":the function is used to print the output on the screen
 # syntax:"print()"
 
 #example:1
@@ -38,7 +38,7 @@
 
 
 
-#input function:the function is used to take input from the user
+#"input function":the function is used to take input from the user
 #syntax:"input()"
 
 #example:1
@@ -61,7 +61,7 @@
 #in example 3 even if we give the input in integer format it will take it as a string only
 
 #here we use "type casting" to convert the string input into integer format
-#type casting:the process of converting one data type into another data type
+#"type casting":the process of converting one data type into another data type
 
 #example:4
 #age=int(input("enter your age:"))
@@ -75,7 +75,7 @@
 
 #in example 5 it will take input from the user in string and convert it into float
 
-#"type conversion":the process of converting one data type into another data type
+# "type conversion":the process of converting one data type into another data type
 
 #example:6 
 #a=1
@@ -88,5 +88,46 @@
 
 #difference between type casting and type conversion is that type casting is done by the user and type conversion is done by the python itself
 
+#To check the type of the variable we use "type()" function\
 
+#example:1
+#age=10
+#print(type(age))
+
+#to check whether the given input is in string format or not we use "isinstance()" function
+
+#example:1
+#age=10
+#print(isinstance(age,int))
+#print(isinstance(age,str))
+#print(isinstance(age,(int,float)))
+#print(isinstance(age,(str,float)))
+
+
+
+#"variables":storage boxes used to store data
+
+#example:1
+#name="rohitha"
+
+#here name is variable and rohitha is stored value
+ 
+#naming a variable in python is done by 3 rules
+
+#snake case: name_of_variable="roo"
+#pascal case: NameOfVariable="roo"
+#camel case: nameOfVariable="roo"
+
+#rules to name a variable
+
+#1.donot start with a number or special character except "_"
+#2.donot use keywords as variable name
+#3.variable name should be single word and cannot have spaces in between
+
+#"Data types":type of data that can be stored in a variable
+
+#int:integer => whole numbers
+#float:floating point => decimal numbers
+#str:set of characters => "rohitha"
+#bool:true or false
 
