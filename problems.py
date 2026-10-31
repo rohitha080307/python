@@ -572,7 +572,7 @@ Rules:
 - Otherwise, a year divisible by 4 is a leap year.
 - All other years are not leap years.'''
 
-def leap_year(n):
+'''def leap_year(n):
     if n%400==0 and n%100!=0:
         return "leap year"
     elif n%100==0 and n%400!=0:
@@ -582,4 +582,129 @@ def leap_year(n):
     else:
         return "not leap year"
 n=int(input())
-print(leap_year(n))
+print(leap_year(n))'''
+
+
+'''27)count digits using function'''
+
+
+'''def count(n):
+    n=abs(n)
+    count=0
+    temp=n
+    if n==0:
+        count=1
+    while n>0:
+        d=n%10    
+        count+=1
+        n=n//10
+    return count
+n=int(input())
+print(count(n))'''
+
+
+'''28)gcd of 2 numbers'''
+
+
+'''def gcd(a,b):
+    
+    res=[]
+    while a>0 and b>0:
+        for i in range(1,min(a,b)+1):
+            if a%i==0 and b%i==0:
+                res.append(i)
+            largest=max(res)
+        return largest            
+a=int(input())
+b=int(input())
+print(gcd(a,b))'''
+
+
+'''29)Check if a Number Is Prime'''
+
+
+'''def prime(x):
+    count=0
+    for i in range(1,x+1):
+        if x%i==0:
+            count+=1
+    if count==2:
+        return True
+    else:
+        return False
+        
+x=int(input())
+print(prime(x))'''
+
+
+'''def prime(x):
+    if x < 2:
+        return False
+    count = 0
+    i = 1
+    while i <= x:
+        if x % i == 0:
+            count += 1
+        i += 1
+    return count == 2
+x = int(input())
+print(prime(x))'''
+
+
+'''30)Alternating Number Series'''
+
+'''n=int(input())
+res=0
+for i in range(1,n+1):
+    if i%2==0:
+        res-=i
+    else:
+        res+=i
+print(res)'''
+
+
+'''31)Sum of Squares'''
+
+'''n=int(input())
+res=0
+for i in range(1,n+1):
+    res+=i**2
+print(res)'''
+
+
+'''32)alternate sum of squares'''
+
+
+
+'''n=int(input())
+res=0
+for i in range(1,n+1):
+    if i%2==0:
+        res-=i**2
+    else:
+        res+=i**2
+print(res)'''
+
+
+'''33)Sum of a Geometric Series'''
+
+
+'''n=int(input())
+res=0
+term=1
+for i in range(1,n+1):
+        res+=term
+        term=term*2      
+print(res)'''
+
+'''34)Arithmetic Series'''
+
+a=int(input())
+n=int(input())
+d=int(input())
+res=0
+for i in range(n):
+    res+=(a+(i*d))
+print(res)
+
+
